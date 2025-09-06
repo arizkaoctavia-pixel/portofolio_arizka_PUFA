@@ -5,59 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portofolio</title>
     <style>
+        /* Reset default margin & padding */
         html, body {
             margin: 0;
             padding: 0;
             font-size: 16px;
             font-family: 'Times New Roman', Times, serif;
         }
+
         .wrapper {
             width: 1024px;
             margin: auto;
             padding: 20px 0;
         }
+
         nav {
             background-color: lemonchiffon;
-            color: lightpink;
         }
+
         nav > .wrapper {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-size: 1.2rem;
         }
-        .menu {
-            width: 50%;
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
         }
-        .menu > ul {
+
+        .menu {
+            width: 60%;
+        }
+
+        .menu ul {
             display: flex;
             list-style-type: none;
             margin: 0;
             padding: 0;
             justify-content: space-between;
         }
-        .menu > ul > li > a {
+
+        .menu ul li a {
             text-decoration: none;
             color: deeppink;
         }
-        .logo img {
-            max-width: 100px;
-            height: auto;
+
+        /* Tambahan styling untuk teks panjang */
+        .menu ul li a.long-text {
+            max-width: 400px;
+            display: block;
         }
     </style>
 </head>
 <body>
     <nav>
         <div class="wrapper">
+            <!-- Logo -->
             <div class="logo">
                 <img src="ar.jpg" alt="Arizka">
             </div>
+
+            <!-- Menu / Info -->
             <div class="menu">
                 <ul>
                     <li><a href="">Arizka Sulistia Oktavia</a></li>
                     <li><a href="">23 Oktober 2008</a></li>
-                    <li><a href="">
-                        Hello, my name is Arizka Oktavia. One of my hobbies is watching movies...
-                    </a></li>
+                    <li>
+                        <a href="" class="long-text">
+                            Hello, my name is Arizka Oktavia. One of my hobbies is watching movies and series, because I believe films can give us new perspectives and inspiration. One of my favorite movies is Legally Blonde. I love this movie because it shows how determination, confidence, and passion can break stereotypes and open new opportunities. It inspires me to always believe in myself and never be afraid to try something new.
+
+                            I consider myself as someone who loves challenges. That is why I chose to pursue my studies in Information Technology, majoring in Cyber Security at President University. Cyber Security is a challenging yet very important field, and I want to prepare myself to face those challenges with both skills and strong determination.
+
+                            Joining PUFA (President University Friendship Association) is also one of my goals, because I want to grow not only academically but also personally. PUFA will give me the chance to connect with new people, improve my communication and teamwork skills, and contribute positively to the community. I believe being part of PUFA will help me become a better version of myself while supporting others along the way.
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
